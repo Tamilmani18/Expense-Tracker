@@ -30,7 +30,7 @@ const server = () => {
 
 server();
 
-const url = `https://expense-tracker-backend-bfpg.onrender.com`;
+const url = `https://expense-tracker-backend-bfpg.onrender.com//api/v1`;
 
 const interval = 30000;
 
