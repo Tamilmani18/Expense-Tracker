@@ -17,6 +17,10 @@ app.use(cors());
 
 // Routes
 
+app.get("/health", async (req, res) => {
+  res.send({ message: "Health ok !" });
+});
+
 readdirSync("./routes").map((route) =>
   app.use("/api/v1", require("./routes/" + route))
 );
@@ -30,7 +34,7 @@ const server = () => {
 
 server();
 
-const url = `https://expense-tracker-backend-bfpg.onrender.com/api/v1/get-incomes`;
+const url = `https://expense-tracker-backend-bfpg.onrender.com/health`;
 
 const interval = 30000;
 
