@@ -36,7 +36,7 @@ server();
 
 const url = `https://expense-tracker-backend-bfpg.onrender.com/health`;
 
-const interval = 30000;
+const interval = 180000000; // 1800000
 
 function reloadWebsite() {
   axios.get(url)
